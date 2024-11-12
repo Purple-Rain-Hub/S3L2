@@ -170,9 +170,10 @@
   */
 
     const revealFooterLink = function () {
-      const reveal = document.querySelector("footer h3")
+      const reveal = document.querySelector("footer")
       reveal.addEventListener("click", function () {
-        reveal.alert("pollo");
+        const urlMagic = document.querySelector("footer a")
+        alert(urlMagic);
       });
     };
     revealFooterLink();
